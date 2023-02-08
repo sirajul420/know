@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* HEADER START */
+Header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color:black;
+}
+nav{
+    z-index: 999;
+    background:#203A43;
+}
+.custom-font{
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.custom-font:hover{
+    color:aqua;
+}
+.design:visited{
+    color:white;
+}
+.logo-img{
+    width: 220px;
+    z-index: 999;
+}
+/* CONTENT START */
+.content{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+}
+.content h2{
+    font-weight: bold;
+    font-size: 40px;
+    color:white;
+}
+.content span{
+    font-weight: bold;
+}
+.content h3{
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+    color:orangered;
+    animation: B1 5s linear infinite;
+}
+@keyframes B1{
+    0%{
+        color: forestgreen;
+    }
+    25%{
+        color: var(--background11-color);
+    }
+    50%{
+        color:green;
+    }
+    75%{
+        color: forestgreen;
+    }
+    100%{
+        color:tomato;
+    }
+}
+.content p{
+    width: 80%;
+}
+.images{
+    height: 100%;
+    background-color: rgb(28, 26, 26);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    border-top-right-radius:35% ;
+    border-bottom-right-radius: 35%;
+    border-right: 1px solid white;
+}
+.effect{
+    position: absolute;
+    top: 30%;
+    left: 200px;
+}
+.effect img{
+    height: 350px;
+    width: 300px;
+    transition: 1s;
+    object-fit: cover;
+}
+.effect img:hover{
+    border: 5px solid white;
+    transform: translate(20px ,20px);
+    object-fit: cover;
+}
+.effect h4{
+    font-size: 25px;
+    color:white;
+    margin-left: 50px;
+}
+footer{
+    width: 80%;
+    height: 50vh;
+    text-align: center;
+    margin:0 auto;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+footer p{
+    width: 50%;
+    margin: 0 auto;
+}
+/* CONTENT END */
+/* HEADER END */
+@media screen and (max-width:600px) {
+    Header{
+        height: auto;
+        padding: 0.1px 0;
+    }
+    .content{
+        position: unset;
+        top: unset;
+        left: unset;
+        padding: 10px 10px;
+        margin-top: 100px;
+    }
+    .images{
+        position: unset;
+        width: 100%;
+        padding: 10px 10px;
+        border-top-right-radius:unset ;
+        border-bottom-right-radius: unset;
+    }
+    .effect{
+        position: unset;
+        top: unset;
+        left: unset;
+    }
+    .effect img{
+        width: 100%;
+    }
+    .effect img:hover{
+        transform: unset;
+        object-fit: cover;
+    }
+    footer{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin:0 auto;
+        padding: 10px 10px;
+        margin-bottom: 10px;
+    }
+    footer p{
+        width: 100%;
+    }
+}
